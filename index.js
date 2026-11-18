@@ -6,7 +6,7 @@
       "Mamá, papá:\n\nHoy di mi primer gran paso,\ny ustedes estuvieron en cada uno.\n\nGracias por soltar mi mano para que aprenda a caminar, y por no soltarla nunca.\n\nGracias, profe Marina, por enseñarme a volar.\nGracias, padrino Edgar y madrina Ingrid, por caminar junto a nosotros.\n\nCon todo mi amor,\nsus pequeños gigantes ♥",
   };
 
-  var MUSIC_SRC = "music/esclavaremix.mp3"; // <-- CAMBIA por el nombre de tu mp3
+  var MUSIC_SRC = "music/heiswe.mp3"; // <-- CAMBIA por el nombre de tu mp3
   var MUSIC_VOL = 1; // volumen de 0 a 1
 
   var T = new Date("2026-12-13T17:00:00-05:00").getTime(),
