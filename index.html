@@ -1,0 +1,1230 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Pequeños gigantes que dejan huella · Invitación</title>
+    <meta name="theme-color" content="#242c11" />
+    <meta
+      property="og:title"
+      content="Pequeños gigantes que dejan huella · Invitación"
+    />
+    <meta
+      property="og:description"
+      content="Te invitamos a la promoción de nuestros pequeños · 13 de diciembre"
+    />
+    <meta
+      property="og:image"
+      content="https://TU-DOMINIO.vercel.app/img/principal.jpg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;0,600;0,700;1,400&family=Pinyon+Script&family=Jost:wght@300;400;500&family=Cinzel:wght@600;700;800&family=Caveat:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <canvas id="fx"></canvas>
+    <div id="gate">
+      <div class="logo">
+        <img
+          src="img/logo.png"
+          alt="Logo de la institución"
+          onerror="this.remove()"
+        />
+      </div>
+      <p class="cap">Estás invitado</p>
+      <p class="tw" aria-label="Pequeños gigantes que dejan huella">
+        <b
+          ><span style="--n: 0">P</span><span style="--n: 1">E</span
+          ><span style="--n: 2">Q</span><span style="--n: 3">U</span
+          ><span style="--n: 4">E</span><span style="--n: 5">Ñ</span
+          ><span style="--n: 6">O</span><span style="--n: 7">S</span></b
+        ><br /><b
+          ><span style="--n: 8">G</span><span style="--n: 9">I</span
+          ><span style="--n: 10">G</span><span style="--n: 11">A</span
+          ><span style="--n: 12">N</span><span style="--n: 13">T</span
+          ><span style="--n: 14">E</span><span style="--n: 15">S</span></b
+        ><br /><b
+          ><span style="--n: 16">Q</span><span style="--n: 17">U</span
+          ><span style="--n: 18">E</span></b
+        >
+        <b
+          ><span style="--n: 19">D</span><span style="--n: 20">E</span
+          ><span style="--n: 21">J</span><span style="--n: 22">A</span
+          ><span style="--n: 23">N</span></b
+        ><br /><b
+          ><span style="--n: 24">H</span><span style="--n: 25">U</span
+          ><span style="--n: 26">E</span><span style="--n: 27">L</span
+          ><span style="--n: 28">L</span><span style="--n: 29">A</span></b
+        ><i class="caret" aria-hidden="true"></i>
+      </p>
+      <p class="cap sub">Nivel inicial · Promoción 2026</p>
+      <button class="btn" id="open">Abrir invitación</button>
+    </div>
+    <button id="mus" aria-label="Activar o silenciar música">🔊</button>
+
+    <header id="hero">
+      <!-- CARRUSEL: la 1.ª diapositiva es la portada con todo el texto. Para agregar una foto, copia un bloque de clase sl, cambia la imagen en la variable img y los textos. -->
+      <div
+        class="ph"
+        id="car"
+        role="region"
+        aria-roledescription="carrusel"
+        aria-label="Fotos de nuestros pequeños"
+      >
+        <div class="sl on">
+          <div
+            class="pic"
+            style="--img: url(&quot;img/grupal.jpg&quot;)"
+          ></div>
+          <img
+            class="pix"
+            src="img/grupal.jpg"
+            alt=""
+            onerror="this.remove()"
+          />
+          <div class="hc">
+            <p class="cap" style="--i: 0">Nos graduamos</p>
+            <h1 class="scr" style="--i: 1">
+              Pequeños gigantes que dejan huella
+            </h1>
+            <p class="cap d" style="--i: 2">13 · Diciembre · 2026</p>
+            <p class="cap d" style="--i: 3; margin-top: 8px; opacity: 0.85">
+              I.E. 22264 Rosa Costa de Arena
+            </p>
+          </div>
+        </div>
+
+        <div class="sl">
+          <div class="pic" style="--img: url(&quot;img/grupal2.jpg&quot;)"></div>
+          <img class="pix" src="img/grupal2.jpg" alt="" onerror="this.remove()" />
+          <div class="hc">
+            <p class="cap" style="--i: 0">Sus primeros pasos</p>
+            <h2 class="scr" style="--i: 1">Cada día aprendieron algo nuevo</h2>
+            <p class="cap d" style="--i: 2">Nivel inicial · 2026</p>
+          </div>
+        </div>
+
+        <div class="sl">
+          <div class="pic" style="--img: url(&quot;img/grupal3.jpg&quot;)"></div>
+          <img class="pix" src="img/grupal3.jpg" alt="" onerror="this.remove()" />
+          <div class="hc">
+            <p class="cap" style="--i: 0">Juegos y risas</p>
+            <h2 class="scr" style="--i: 1">
+              Aprender jugando fue nuestra aventura
+            </h2>
+            <p class="cap d" style="--i: 2">Momentos que no olvidaremos</p>
+          </div>
+        </div>
+
+        <div class="sl">
+          <div class="pic" style="--img: url(&quot;img/grupal4.jpg&quot;)"></div>
+          <img class="pix" src="img/grupal4.jpg" alt="" onerror="this.remove()" />
+          <div class="hc">
+            <p class="cap" style="--i: 0">Gracias, familia</p>
+            <h2 class="scr" style="--i: 1">
+              Gracias por caminar a nuestro lado
+            </h2>
+            <p class="cap d" style="--i: 2">Papás, padrinos y maestros</p>
+          </div>
+        </div>
+
+        <div class="dots" id="dots"></div>
+      </div>
+      <div class="pn">
+        <p>Pequeños pasos, gigantes huellas.</p>
+        <span class="hrt">♥</span>
+      </div>
+    </header>
+
+    <section class="band white">
+      <div class="in">
+        <h2 class="scr rv">Nos complace invitarte</h2>
+        <div class="ln rv"></div>
+        <p class="txt rv">
+          Con inmensa alegría celebramos el fin de esta primera etapa de
+          nuestros pequeños.
+        </p>
+        <p class="txt rv">
+          Nos honra invitarte a compartir con nosotros la ceremonia y la fiesta
+          de su promoción.
+        </p>
+        <p class="txt rv" style="color: var(--blue)">
+          Tu presencia hará este recuerdo aún más especial.
+        </p>
+        <div class="stf rv">
+          <p class="cap">Padrino</p>
+          <p class="pr">Edgar Juan Condezo Torres</p>
+          <p class="cap">Madrina</p>
+          <p class="pr">Ingrid Lucero Gonzales Chumpitaz</p>
+          <p class="cap">Docente</p>
+          <p class="pr">Marina Magallanes</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="band blue">
+      <div class="in">
+        <h2 class="scr rv">Falta muy poco</h2>
+        <div class="ln rv"></div>
+        <div class="cd rv">
+          <div><b id="d">0</b><span>Días</span></div>
+          <div><b id="h">0</b><span>Horas</span></div>
+          <div><b id="m">0</b><span>Min</span></div>
+          <div><b id="s">0</b><span>Seg</span></div>
+        </div>
+        <div class="row rv" style="margin-top: 34px">
+          <a
+            class="btn"
+            target="_blank"
+            rel="noopener"
+            href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Promoci%C3%B3n+Peque%C3%B1os+gigantes+que+dejan+huella+-+I.E.+22264&dates=20261213T220000Z/20261214T043000Z&location=Recepciones+Majuelo,+Av.+Emancipaci%C3%B3n+399,+Sunampe"
+            >Guardar en calendario</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="band white" id="grow">
+      <div class="in">
+        <h2 class="scr rv">Pequeños gigantes</h2>
+        <div class="ln rv"></div>
+        <p class="hint rv" id="ghint">
+          Toca la tarjeta y mira crecer a un pequeño gigante
+        </p>
+        <div class="scene rv" id="scene">
+          <svg
+            id="gsvg"
+            viewBox="0 0 300 360"
+            role="img"
+            aria-label="Una huellita de bebé que crece hasta ser gigante y luego una manita grande que toma una manita pequeña"
+          >
+            <defs>
+              <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#fbf6e6" />
+                <stop offset="1" stop-color="#efe7c8" />
+              </linearGradient>
+              <linearGradient id="flr" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#7c8d33" />
+                <stop offset="1" stop-color="#4f5f1a" />
+              </linearGradient>
+              <linearGradient id="ftg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#f3d584" />
+                <stop offset="1" stop-color="#c99a35" />
+              </linearGradient>
+              <linearGradient id="wood" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#c9a86a" />
+                <stop offset="1" stop-color="#a8844a" />
+              </linearGradient>
+              <g id="ft">
+                <path
+                  d="M-26 -4 C-28 -26 26 -30 26 -4 C26 12 14 20 14 34 C14 54 -14 54 -14 34 C-14 20 -26 12 -26 -4Z"
+                />
+                <circle cx="-19" cy="-36" r="9" />
+                <circle cx="-6" cy="-43" r="7" />
+                <circle cx="7" cy="-43" r="6.5" />
+                <circle cx="18" cy="-38" r="6" />
+                <circle cx="26" cy="-29" r="5" />
+              </g>
+            </defs>
+            <rect width="300" height="360" rx="22" fill="url(#wall)" />
+            <path
+              d="M0 60h300M0 120h300M0 180h300M0 240h300"
+              stroke="rgba(90,107,36,.07)"
+              stroke-width="2"
+            />
+            <path
+              d="M0 300H300V338a22 22 0 0 1-22 22H22a22 22 0 0 1-22-22Z"
+              fill="url(#flr)"
+            />
+            <path
+              d="M0 322H300M0 342H300"
+              stroke="rgba(0,0,0,.12)"
+              stroke-width="1.5"
+            />
+            <g id="act1">
+              <rect
+                x="26"
+                y="70"
+                width="12"
+                height="230"
+                rx="4"
+                fill="url(#wood)"
+              />
+              <path
+                d="M38 290h8M38 268h5M38 246h8M38 224h5M38 202h8M38 180h5M38 158h8M38 136h5M38 114h8M38 92h5M38 70h8"
+                stroke="#5b4a2a"
+                stroke-width="1.6"
+              />
+              <g id="mk">
+                <path
+                  d="M114 0H168"
+                  stroke="#d8b45c"
+                  stroke-width="1.5"
+                  stroke-dasharray="3 4"
+                />
+                <path
+                  d="M46 0h6l9-10h46a7 7 0 0 1 7 7v6a7 7 0 0 1-7 7H61l-9-10Z"
+                  fill="#d8b45c"
+                  stroke="#a97c1f"
+                />
+                <text id="mkt" x="64" y="4">1 año</text>
+              </g>
+              <ellipse
+                cx="175"
+                cy="302"
+                rx="42"
+                ry="5"
+                fill="rgba(0,0,0,.25)"
+              />
+              <g transform="translate(175 300)">
+                <g id="foot">
+                  <g transform="translate(0 -54)">
+                    <use href="#ft" class="ftf" />
+                    <g class="mf">
+                      <use
+                        href="#ft"
+                        transform="translate(-12 -8) rotate(-14) scale(.14)"
+                      />
+                      <use
+                        href="#ft"
+                        transform="translate(12 -10) rotate(12) scale(.14)"
+                      />
+                      <use
+                        href="#ft"
+                        transform="translate(0 10) rotate(-6) scale(.14)"
+                      />
+                      <use
+                        href="#ft"
+                        transform="translate(-6 28) rotate(10) scale(.14)"
+                      />
+                      <use
+                        href="#ft"
+                        transform="translate(6 38) rotate(-10) scale(.14)"
+                      />
+                    </g>
+                  </g>
+                </g>
+              </g>
+              <g id="sparks"></g>
+            </g>
+            <g id="act2">
+              <linearGradient id="sk1" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#f6cfb0" />
+                <stop offset=".55" stop-color="#e8b08a" />
+                <stop offset="1" stop-color="#d79a73" />
+              </linearGradient>
+              <linearGradient id="sk2" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#fbe0c8" />
+                <stop offset=".55" stop-color="#f4c8a6" />
+                <stop offset="1" stop-color="#e6b08a" />
+              </linearGradient>
+              <ellipse
+                cx="170"
+                cy="272"
+                rx="105"
+                ry="8"
+                fill="rgba(0,0,0,.14)"
+              />
+              <circle class="rg" cx="175" cy="215" r="80" />
+              <g class="hc2">
+                <g transform="translate(262 226) scale(-.62 .62)">
+                  <g transform="translate(86 24)">
+                    <g class="jt" style="--o: 0; --r: -16; --d: 0.4s">
+                      <path
+                        d="M0,-6.5 L24,-5.5 A5.5,5.5 0 0 1 24,5.5 L0,6.5 A6.5,6.5 0 0 1 0,-6.5Z"
+                        fill="url(#sk2)"
+                        stroke="#b07a55"
+                        stroke-width=".9"
+                      />
+                      <path
+                        d="M3,-5.3 L22,-4.3"
+                        stroke="#fff"
+                        stroke-opacity=".35"
+                        stroke-width="2.2"
+                        stroke-linecap="round"
+                      />
+                      <g transform="translate(24 0)">
+                        <g class="jt" style="--o: 14; --r: -22; --d: 0.47s">
+                          <path
+                            d="M0,-5.5 L17,-4.75 A4.75,4.75 0 0 1 17,4.75 L0,5.5 A5.5,5.5 0 0 1 0,-5.5Z"
+                            fill="url(#sk2)"
+                            stroke="#b07a55"
+                            stroke-width=".9"
+                          />
+                          <path
+                            d="M3,-4.3 L15,-3.5"
+                            stroke="#fff"
+                            stroke-opacity=".35"
+                            stroke-width="2.2"
+                            stroke-linecap="round"
+                          />
+                          <g transform="translate(17 0)">
+                            <g class="jt" style="--o: 8; --r: -10; --d: 0.54s">
+                              <path
+                                d="M0,-4.75 L14,-4.0 A4.0,4.0 0 0 1 14,4.0 L0,4.75 A4.75,4.75 0 0 1 0,-4.75Z"
+                                fill="url(#sk2)"
+                                stroke="#b07a55"
+                                stroke-width=".9"
+                              />
+                              <path
+                                d="M3,-3.5 L12,-2.8"
+                                stroke="#fff"
+                                stroke-opacity=".35"
+                                stroke-width="2.2"
+                                stroke-linecap="round"
+                              />
+                              <rect
+                                x="4"
+                                y="-4.6"
+                                width="9"
+                                height="3.6"
+                                rx="3.2"
+                                fill="#fff"
+                                fill-opacity=".38"
+                                stroke="#c9946f"
+                                stroke-opacity=".5"
+                                stroke-width=".6"
+                              />
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                  <g transform="translate(87 10)">
+                    <g class="jt" style="--o: 2; --r: -14; --d: 0.3s">
+                      <path
+                        d="M0,-7.5 L30,-6.5 A6.5,6.5 0 0 1 30,6.5 L0,7.5 A7.5,7.5 0 0 1 0,-7.5Z"
+                        fill="url(#sk2)"
+                        stroke="#b07a55"
+                        stroke-width=".9"
+                      />
+                      <path
+                        d="M3,-6.3 L28,-5.3"
+                        stroke="#fff"
+                        stroke-opacity=".35"
+                        stroke-width="2.2"
+                        stroke-linecap="round"
+                      />
+                      <g transform="translate(30 0)">
+                        <g class="jt" style="--o: 14; --r: -24; --d: 0.37s">
+                          <path
+                            d="M0,-6.5 L22,-5.75 A5.75,5.75 0 0 1 22,5.75 L0,6.5 A6.5,6.5 0 0 1 0,-6.5Z"
+                            fill="url(#sk2)"
+                            stroke="#b07a55"
+                            stroke-width=".9"
+                          />
+                          <path
+                            d="M3,-5.3 L20,-4.5"
+                            stroke="#fff"
+                            stroke-opacity=".35"
+                            stroke-width="2.2"
+                            stroke-linecap="round"
+                          />
+                          <g transform="translate(22 0)">
+                            <g class="jt" style="--o: 8; --r: -12; --d: 0.44s">
+                              <path
+                                d="M0,-5.75 L16,-4.75 A4.75,4.75 0 0 1 16,4.75 L0,5.75 A5.75,5.75 0 0 1 0,-5.75Z"
+                                fill="url(#sk2)"
+                                stroke="#b07a55"
+                                stroke-width=".9"
+                              />
+                              <path
+                                d="M3,-4.5 L14,-3.5"
+                                stroke="#fff"
+                                stroke-opacity=".35"
+                                stroke-width="2.2"
+                                stroke-linecap="round"
+                              />
+                              <rect
+                                x="6"
+                                y="-5.3"
+                                width="9"
+                                height="4.3"
+                                rx="3.2"
+                                fill="#fff"
+                                fill-opacity=".38"
+                                stroke="#c9946f"
+                                stroke-opacity=".5"
+                                stroke-width=".6"
+                              />
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                  <g transform="translate(88 -5)">
+                    <g class="jt" style="--o: 4; --r: -12; --d: 0.2s">
+                      <path
+                        d="M0,-8.0 L33,-7.0 A7.0,7.0 0 0 1 33,7.0 L0,8.0 A8.0,8.0 0 0 1 0,-8.0Z"
+                        fill="url(#sk2)"
+                        stroke="#b07a55"
+                        stroke-width=".9"
+                      />
+                      <path
+                        d="M3,-6.8 L31,-5.8"
+                        stroke="#fff"
+                        stroke-opacity=".35"
+                        stroke-width="2.2"
+                        stroke-linecap="round"
+                      />
+                      <g transform="translate(33 0)">
+                        <g class="jt" style="--o: 14; --r: -24; --d: 0.27s">
+                          <path
+                            d="M0,-7.0 L24,-6.25 A6.25,6.25 0 0 1 24,6.25 L0,7.0 A7.0,7.0 0 0 1 0,-7.0Z"
+                            fill="url(#sk2)"
+                            stroke="#b07a55"
+                            stroke-width=".9"
+                          />
+                          <path
+                            d="M3,-5.8 L22,-5.0"
+                            stroke="#fff"
+                            stroke-opacity=".35"
+                            stroke-width="2.2"
+                            stroke-linecap="round"
+                          />
+                          <g transform="translate(24 0)">
+                            <g class="jt" style="--o: 8; --r: -12; --d: 0.34s">
+                              <path
+                                d="M0,-6.25 L18,-5.25 A5.25,5.25 0 0 1 18,5.25 L0,6.25 A6.25,6.25 0 0 1 0,-6.25Z"
+                                fill="url(#sk2)"
+                                stroke="#b07a55"
+                                stroke-width=".9"
+                              />
+                              <path
+                                d="M3,-5.0 L16,-4.0"
+                                stroke="#fff"
+                                stroke-opacity=".35"
+                                stroke-width="2.2"
+                                stroke-linecap="round"
+                              />
+                              <rect
+                                x="8"
+                                y="-5.8"
+                                width="9"
+                                height="4.7"
+                                rx="3.2"
+                                fill="#fff"
+                                fill-opacity=".38"
+                                stroke="#c9946f"
+                                stroke-opacity=".5"
+                                stroke-width=".6"
+                              />
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                  <g transform="translate(86 -20)">
+                    <g class="jt" style="--o: 6; --r: -10; --d: 0.1s">
+                      <path
+                        d="M0,-8.0 L30,-7.0 A7.0,7.0 0 0 1 30,7.0 L0,8.0 A8.0,8.0 0 0 1 0,-8.0Z"
+                        fill="url(#sk2)"
+                        stroke="#b07a55"
+                        stroke-width=".9"
+                      />
+                      <path
+                        d="M3,-6.8 L28,-5.8"
+                        stroke="#fff"
+                        stroke-opacity=".35"
+                        stroke-width="2.2"
+                        stroke-linecap="round"
+                      />
+                      <g transform="translate(30 0)">
+                        <g class="jt" style="--o: 12; --r: -22; --d: 0.17s">
+                          <path
+                            d="M0,-7.0 L22,-6.25 A6.25,6.25 0 0 1 22,6.25 L0,7.0 A7.0,7.0 0 0 1 0,-7.0Z"
+                            fill="url(#sk2)"
+                            stroke="#b07a55"
+                            stroke-width=".9"
+                          />
+                          <path
+                            d="M3,-5.8 L20,-5.0"
+                            stroke="#fff"
+                            stroke-opacity=".35"
+                            stroke-width="2.2"
+                            stroke-linecap="round"
+                          />
+                          <g transform="translate(22 0)">
+                            <g class="jt" style="--o: 8; --r: -12; --d: 0.24s">
+                              <path
+                                d="M0,-6.25 L17,-5.25 A5.25,5.25 0 0 1 17,5.25 L0,6.25 A6.25,6.25 0 0 1 0,-6.25Z"
+                                fill="url(#sk2)"
+                                stroke="#b07a55"
+                                stroke-width=".9"
+                              />
+                              <path
+                                d="M3,-5.0 L15,-4.0"
+                                stroke="#fff"
+                                stroke-opacity=".35"
+                                stroke-width="2.2"
+                                stroke-linecap="round"
+                              />
+                              <rect
+                                x="7"
+                                y="-5.8"
+                                width="9"
+                                height="4.7"
+                                rx="3.2"
+                                fill="#fff"
+                                fill-opacity=".38"
+                                stroke="#c9946f"
+                                stroke-opacity=".5"
+                                stroke-width=".6"
+                              />
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                  <path
+                    d="M-34,-22 C-4,-36 42,-42 84,-36 C98,-33 100,-20 99,-4 L97,22 C88,34 44,38 10,32 C-6,29 -22,24 -34,20Z"
+                    fill="url(#sk2)"
+                    stroke="#b07a55"
+                    stroke-width="1"
+                  />
+                  <path
+                    d="M20,-20 C44,-30 70,-30 88,-26"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-opacity=".4"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M30,-6 C52,-10 72,-8 86,-6 M32,6 C54,4 72,6 88,8 M30,18 C52,16 70,18 86,20"
+                    fill="none"
+                    stroke="#a8714b"
+                    stroke-opacity=".28"
+                    stroke-width="1.4"
+                    stroke-linecap="round"
+                  />
+                  <g fill="#fff" fill-opacity=".28">
+                    <circle cx="90" cy="-18" r="5" />
+                    <circle cx="92" cy="-2" r="5" />
+                    <circle cx="92" cy="12" r="4.5" />
+                    <circle cx="90" cy="25" r="4" />
+                  </g>
+                  <g transform="translate(26 24)">
+                    <g class="jt" style="--o: -6; --r: -24; --d: 0.3s">
+                      <path
+                        d="M0,-9.5 L34,-8.0 A8.0,8.0 0 0 1 34,8.0 L0,9.5 A9.5,9.5 0 0 1 0,-9.5Z"
+                        fill="url(#sk2)"
+                        stroke="#b07a55"
+                        stroke-width=".9"
+                      />
+                      <path
+                        d="M3,-8.3 L32,-6.8"
+                        stroke="#fff"
+                        stroke-opacity=".35"
+                        stroke-width="2.2"
+                        stroke-linecap="round"
+                      />
+                      <g transform="translate(34 0)">
+                        <g class="jt" style="--o: -2; --r: -14; --d: 0.37s">
+                          <path
+                            d="M0,-8.0 L26,-6.75 A6.75,6.75 0 0 1 26,6.75 L0,8.0 A8.0,8.0 0 0 1 0,-8.0Z"
+                            fill="url(#sk2)"
+                            stroke="#b07a55"
+                            stroke-width=".9"
+                          />
+                          <path
+                            d="M3,-6.8 L24,-5.5"
+                            stroke="#fff"
+                            stroke-opacity=".35"
+                            stroke-width="2.2"
+                            stroke-linecap="round"
+                          />
+                          <rect
+                            x="16"
+                            y="-7.3"
+                            width="9"
+                            height="6.1"
+                            rx="3.2"
+                            fill="#fff"
+                            fill-opacity=".38"
+                            stroke="#c9946f"
+                            stroke-opacity=".5"
+                            stroke-width=".6"
+                          />
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+                <rect
+                  x="276"
+                  y="194"
+                  width="40"
+                  height="58"
+                  rx="9"
+                  fill="#d8b45c"
+                />
+                <rect
+                  x="276"
+                  y="194"
+                  width="6"
+                  height="58"
+                  rx="3"
+                  fill="#b8903a"
+                />
+              </g>
+              <g class="ha">
+                <g transform="translate(92 170)">
+                  <g transform="translate(86 24)">
+                    <g class="jt" style="--o: -6; --r: 28; --d: 0.4s">
+                      <path
+                        d="M0,-6.5 L24,-5.5 A5.5,5.5 0 0 1 24,5.5 L0,6.5 A6.5,6.5 0 0 1 0,-6.5Z"
+                        fill="url(#sk1)"
+                        stroke="#b07a55"
+                        stroke-width=".9"
+                      />
+                      <path
+                        d="M3,-5.3 L22,-4.3"
+                        stroke="#fff"
+                        stroke-opacity=".35"
+                        stroke-width="2.2"
+                        stroke-linecap="round"
+                      />
+                      <g transform="translate(24 0)">
+                        <g class="jt" style="--o: 8; --r: 34; --d: 0.47s">
+                          <path
+                            d="M0,-5.5 L17,-4.75 A4.75,4.75 0 0 1 17,4.75 L0,5.5 A5.5,5.5 0 0 1 0,-5.5Z"
+                            fill="url(#sk1)"
+                            stroke="#b07a55"
+                            stroke-width=".9"
+                          />
+                          <path
+                            d="M3,-4.3 L15,-3.5"
+                            stroke="#fff"
+                            stroke-opacity=".35"
+                            stroke-width="2.2"
+                            stroke-linecap="round"
+                          />
+                          <g transform="translate(17 0)">
+                            <g class="jt" style="--o: 4; --r: 22; --d: 0.54s">
+                              <path
+                                d="M0,-4.75 L14,-4.0 A4.0,4.0 0 0 1 14,4.0 L0,4.75 A4.75,4.75 0 0 1 0,-4.75Z"
+                                fill="url(#sk1)"
+                                stroke="#b07a55"
+                                stroke-width=".9"
+                              />
+                              <path
+                                d="M3,-3.5 L12,-2.8"
+                                stroke="#fff"
+                                stroke-opacity=".35"
+                                stroke-width="2.2"
+                                stroke-linecap="round"
+                              />
+                              <rect
+                                x="4"
+                                y="-4.6"
+                                width="9"
+                                height="3.6"
+                                rx="3.2"
+                                fill="#fff"
+                                fill-opacity=".38"
+                                stroke="#c9946f"
+                                stroke-opacity=".5"
+                                stroke-width=".6"
+                              />
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                  <g transform="translate(87 10)">
+                    <g class="jt" style="--o: -4; --r: 26; --d: 0.3s">
+                      <path
+                        d="M0,-7.5 L30,-6.5 A6.5,6.5 0 0 1 30,6.5 L0,7.5 A7.5,7.5 0 0 1 0,-7.5Z"
+                        fill="url(#sk1)"
+                        stroke="#b07a55"
+                        stroke-width=".9"
+                      />
+                      <path
+                        d="M3,-6.3 L28,-5.3"
+                        stroke="#fff"
+                        stroke-opacity=".35"
+                        stroke-width="2.2"
+                        stroke-linecap="round"
+                      />
+                      <g transform="translate(30 0)">
+                        <g class="jt" style="--o: 8; --r: 36; --d: 0.37s">
+                          <path
+                            d="M0,-6.5 L22,-5.75 A5.75,5.75 0 0 1 22,5.75 L0,6.5 A6.5,6.5 0 0 1 0,-6.5Z"
+                            fill="url(#sk1)"
+                            stroke="#b07a55"
+                            stroke-width=".9"
+                          />
+                          <path
+                            d="M3,-5.3 L20,-4.5"
+                            stroke="#fff"
+                            stroke-opacity=".35"
+                            stroke-width="2.2"
+                            stroke-linecap="round"
+                          />
+                          <g transform="translate(22 0)">
+                            <g class="jt" style="--o: 4; --r: 24; --d: 0.44s">
+                              <path
+                                d="M0,-5.75 L16,-4.75 A4.75,4.75 0 0 1 16,4.75 L0,5.75 A5.75,5.75 0 0 1 0,-5.75Z"
+                                fill="url(#sk1)"
+                                stroke="#b07a55"
+                                stroke-width=".9"
+                              />
+                              <path
+                                d="M3,-4.5 L14,-3.5"
+                                stroke="#fff"
+                                stroke-opacity=".35"
+                                stroke-width="2.2"
+                                stroke-linecap="round"
+                              />
+                              <rect
+                                x="6"
+                                y="-5.3"
+                                width="9"
+                                height="4.3"
+                                rx="3.2"
+                                fill="#fff"
+                                fill-opacity=".38"
+                                stroke="#c9946f"
+                                stroke-opacity=".5"
+                                stroke-width=".6"
+                              />
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                  <g transform="translate(88 -5)">
+                    <g class="jt" style="--o: -2; --r: 24; --d: 0.2s">
+                      <path
+                        d="M0,-8.0 L33,-7.0 A7.0,7.0 0 0 1 33,7.0 L0,8.0 A8.0,8.0 0 0 1 0,-8.0Z"
+                        fill="url(#sk1)"
+                        stroke="#b07a55"
+                        stroke-width=".9"
+                      />
+                      <path
+                        d="M3,-6.8 L31,-5.8"
+                        stroke="#fff"
+                        stroke-opacity=".35"
+                        stroke-width="2.2"
+                        stroke-linecap="round"
+                      />
+                      <g transform="translate(33 0)">
+                        <g class="jt" style="--o: 8; --r: 36; --d: 0.27s">
+                          <path
+                            d="M0,-7.0 L24,-6.25 A6.25,6.25 0 0 1 24,6.25 L0,7.0 A7.0,7.0 0 0 1 0,-7.0Z"
+                            fill="url(#sk1)"
+                            stroke="#b07a55"
+                            stroke-width=".9"
+                          />
+                          <path
+                            d="M3,-5.8 L22,-5.0"
+                            stroke="#fff"
+                            stroke-opacity=".35"
+                            stroke-width="2.2"
+                            stroke-linecap="round"
+                          />
+                          <g transform="translate(24 0)">
+                            <g class="jt" style="--o: 4; --r: 24; --d: 0.34s">
+                              <path
+                                d="M0,-6.25 L18,-5.25 A5.25,5.25 0 0 1 18,5.25 L0,6.25 A6.25,6.25 0 0 1 0,-6.25Z"
+                                fill="url(#sk1)"
+                                stroke="#b07a55"
+                                stroke-width=".9"
+                              />
+                              <path
+                                d="M3,-5.0 L16,-4.0"
+                                stroke="#fff"
+                                stroke-opacity=".35"
+                                stroke-width="2.2"
+                                stroke-linecap="round"
+                              />
+                              <rect
+                                x="8"
+                                y="-5.8"
+                                width="9"
+                                height="4.7"
+                                rx="3.2"
+                                fill="#fff"
+                                fill-opacity=".38"
+                                stroke="#c9946f"
+                                stroke-opacity=".5"
+                                stroke-width=".6"
+                              />
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                  <g transform="translate(86 -20)">
+                    <g class="jt" style="--o: 0; --r: 22; --d: 0.1s">
+                      <path
+                        d="M0,-8.0 L30,-7.0 A7.0,7.0 0 0 1 30,7.0 L0,8.0 A8.0,8.0 0 0 1 0,-8.0Z"
+                        fill="url(#sk1)"
+                        stroke="#b07a55"
+                        stroke-width=".9"
+                      />
+                      <path
+                        d="M3,-6.8 L28,-5.8"
+                        stroke="#fff"
+                        stroke-opacity=".35"
+                        stroke-width="2.2"
+                        stroke-linecap="round"
+                      />
+                      <g transform="translate(30 0)">
+                        <g class="jt" style="--o: 6; --r: 34; --d: 0.17s">
+                          <path
+                            d="M0,-7.0 L22,-6.25 A6.25,6.25 0 0 1 22,6.25 L0,7.0 A7.0,7.0 0 0 1 0,-7.0Z"
+                            fill="url(#sk1)"
+                            stroke="#b07a55"
+                            stroke-width=".9"
+                          />
+                          <path
+                            d="M3,-5.8 L20,-5.0"
+                            stroke="#fff"
+                            stroke-opacity=".35"
+                            stroke-width="2.2"
+                            stroke-linecap="round"
+                          />
+                          <g transform="translate(22 0)">
+                            <g class="jt" style="--o: 4; --r: 22; --d: 0.24s">
+                              <path
+                                d="M0,-6.25 L17,-5.25 A5.25,5.25 0 0 1 17,5.25 L0,6.25 A6.25,6.25 0 0 1 0,-6.25Z"
+                                fill="url(#sk1)"
+                                stroke="#b07a55"
+                                stroke-width=".9"
+                              />
+                              <path
+                                d="M3,-5.0 L15,-4.0"
+                                stroke="#fff"
+                                stroke-opacity=".35"
+                                stroke-width="2.2"
+                                stroke-linecap="round"
+                              />
+                              <rect
+                                x="7"
+                                y="-5.8"
+                                width="9"
+                                height="4.7"
+                                rx="3.2"
+                                fill="#fff"
+                                fill-opacity=".38"
+                                stroke="#c9946f"
+                                stroke-opacity=".5"
+                                stroke-width=".6"
+                              />
+                            </g>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                  <path
+                    d="M-34,-22 C-4,-36 42,-42 84,-36 C98,-33 100,-20 99,-4 L97,22 C88,34 44,38 10,32 C-6,29 -22,24 -34,20Z"
+                    fill="url(#sk1)"
+                    stroke="#b07a55"
+                    stroke-width="1"
+                  />
+                  <path
+                    d="M20,-20 C44,-30 70,-30 88,-26"
+                    fill="none"
+                    stroke="#fff"
+                    stroke-opacity=".4"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                  />
+                  <path
+                    d="M30,-6 C52,-10 72,-8 86,-6 M32,6 C54,4 72,6 88,8 M30,18 C52,16 70,18 86,20"
+                    fill="none"
+                    stroke="#a8714b"
+                    stroke-opacity=".28"
+                    stroke-width="1.4"
+                    stroke-linecap="round"
+                  />
+                  <g fill="#fff" fill-opacity=".28">
+                    <circle cx="90" cy="-18" r="5" />
+                    <circle cx="92" cy="-2" r="5" />
+                    <circle cx="92" cy="12" r="4.5" />
+                    <circle cx="90" cy="25" r="4" />
+                  </g>
+                  <g transform="translate(26 24)">
+                    <g class="jt" style="--o: -14; --r: 10; --d: 0.3s">
+                      <path
+                        d="M0,-9.5 L34,-8.0 A8.0,8.0 0 0 1 34,8.0 L0,9.5 A9.5,9.5 0 0 1 0,-9.5Z"
+                        fill="url(#sk1)"
+                        stroke="#b07a55"
+                        stroke-width=".9"
+                      />
+                      <path
+                        d="M3,-8.3 L32,-6.8"
+                        stroke="#fff"
+                        stroke-opacity=".35"
+                        stroke-width="2.2"
+                        stroke-linecap="round"
+                      />
+                      <g transform="translate(34 0)">
+                        <g class="jt" style="--o: -6; --r: 8; --d: 0.37s">
+                          <path
+                            d="M0,-8.0 L26,-6.75 A6.75,6.75 0 0 1 26,6.75 L0,8.0 A8.0,8.0 0 0 1 0,-8.0Z"
+                            fill="url(#sk1)"
+                            stroke="#b07a55"
+                            stroke-width=".9"
+                          />
+                          <path
+                            d="M3,-6.8 L24,-5.5"
+                            stroke="#fff"
+                            stroke-opacity=".35"
+                            stroke-width="2.2"
+                            stroke-linecap="round"
+                          />
+                          <rect
+                            x="16"
+                            y="-7.3"
+                            width="9"
+                            height="6.1"
+                            rx="3.2"
+                            fill="#fff"
+                            fill-opacity=".38"
+                            stroke="#c9946f"
+                            stroke-opacity=".5"
+                            stroke-width=".6"
+                          />
+                        </g>
+                      </g>
+                    </g>
+                  </g>
+                </g>
+                <rect
+                  x="-8"
+                  y="140"
+                  width="70"
+                  height="66"
+                  rx="14"
+                  fill="#5a6b24"
+                />
+                <rect
+                  x="54"
+                  y="142"
+                  width="9"
+                  height="62"
+                  rx="4"
+                  fill="#46571a"
+                />
+              </g>
+              <g transform="translate(150 98)">
+                <g class="bh">
+                  <path
+                    d="M0 -10C-6 -22-26 -18-22 0C-20 12-6 20 0 28C6 20 20 12 22 0C26-18 6-22 0-10Z"
+                    fill="#d9778f"
+                    transform="scale(1.25)"
+                  />
+                </g>
+              </g>
+              <g id="hearts"></g>
+            </g>
+          </svg>
+        </div>
+        <div class="gmeter rv" aria-hidden="true">
+          <i class="wd"></i><i class="wd"></i><i class="wd"></i
+          ><i class="wd"></i><i class="wd"></i>
+        </div>
+        <div class="gdone" id="gdone" aria-live="polite">
+          <p class="scr" id="gd1"></p>
+          <p class="cap" id="gd2"></p>
+        </div>
+        <div class="row rv" style="margin-top: 22px">
+          <button class="btn rb" id="water" type="button">
+            Hacer crecer 👣
+          </button>
+          <button class="btn rb" id="ltb" type="button" hidden>
+            Leer la carta 💌
+          </button>
+          <button class="btn ol" id="again" type="button" hidden>
+            Volver a empezar
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="band blue">
+      <div class="in">
+        <h2 class="scr rv">Programa</h2>
+        <div class="ln rv"></div>
+        <div class="tl">
+          <div class="rv">
+            <b>5:00 pm</b>
+            <article>
+              <h3>Recepción</h3>
+              <span>Bienvenida y fotos con los invitados</span>
+            </article>
+          </div>
+          <div class="rv">
+            <b>6:00 pm</b>
+            <article>
+              <h3>Ceremonia</h3>
+              <span>Un momento muy especial para nuestros pequeños</span>
+            </article>
+          </div>
+          <div class="rv">
+            <b>7:00 pm</b>
+            <article>
+              <h3>Baile de los promocionados</h3>
+              <span>Nuestros pequeños gigantes brillan en la pista</span>
+            </article>
+          </div>
+          <div class="rv">
+            <b>8:00 pm</b>
+            <article>
+              <h3>Cena</h3>
+              <span>Compartimos la mesa en familia</span>
+            </article>
+          </div>
+          <div class="rv">
+            <b>9:00 pm</b>
+            <article>
+              <h3>Show</h3>
+              <span>¡Diversión para todos!</span>
+            </article>
+          </div>
+          <div class="rv">
+            <b>10:00 pm</b>
+            <article>
+              <h3>Culminación</h3>
+              <span>Con baile de celebración</span>
+            </article>
+          </div>
+        </div>
+        <p class="rv" style="opacity: 0.7; margin-top: 14px; font-size: 0.9rem">
+          Horarios referenciales
+        </p>
+      </div>
+    </section>
+
+    <section class="band white">
+      <div class="in">
+        <h2 class="scr rv">¿Dónde será?</h2>
+        <div class="ln rv"></div>
+        <div class="card rv" style="padding-top: clamp(50px, 12vw, 90px)">
+          <p class="scr">Recepciones Majuelo</p>
+          <p class="cap" style="margin: 8px 0">
+            Av. Emancipación 399 · Sunampe
+          </p>
+          <p style="margin-bottom: 18px">
+            Domingo 13 de diciembre · 5:00 p. m.
+          </p>
+          <a
+            class="btn rb"
+            target="_blank"
+            rel="noopener"
+            href="https://www.google.com/maps/search/?api=1&query=Recepciones+Majuelo+Av+Emancipacion+399+Sunampe+Chincha+Peru"
+            >Cómo llegar</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="band mist">
+      <div class="in">
+        <h2 class="scr rv">Detalles</h2>
+        <div class="ln rv"></div>
+        <div class="g3">
+          <div class="rv">
+            <i aria-hidden="true">👔</i>
+            <h3>Vestimenta</h3>
+            <p>Elegante y cómoda para disfrutar junto a los pequeños.</p>
+          </div>
+          <div class="rv">
+            <i aria-hidden="true">⏰</i>
+            <h3>Puntualidad</h3>
+            <p>Llega unos minutos antes de las 5:00 p. m.</p>
+          </div>
+          <div class="rv">
+            <i aria-hidden="true">📸</i>
+            <h3>Fotos</h3>
+            <p>Habrá un espacio para el recuerdo.</p>
+          </div>
+          <div class="rv">
+            <i aria-hidden="true">🎈</i>
+            <h3>Show</h3>
+            <p>A las 9:00 p. m. ¡habrá show para todos!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band blue" id="rsvp">
+      <div class="in">
+        <h2 class="scr rv">Confirma tu asistencia</h2>
+        <div class="ln rv"></div>
+        <form class="rv" onsubmit="return false;">
+          <label
+            >Tu nombre<input
+              id="nm"
+              placeholder="Nombre y apellido"
+              autocomplete="name"
+          /></label>
+          <label
+            >Personas que asistirán<select id="ng">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select></label
+          >
+          <div class="row">
+            <button class="btn" id="yes" type="button">Sí, asistiré</button>
+            <button class="btn ol" id="no" type="button">No podré ir</button>
+          </div>
+          <div class="row" style="margin-top: 0">
+            <button class="btn ol" id="sh" type="button">
+              Compartir invitación
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer
+      class="band blue"
+      style="padding-bottom: 100px; background: #242c11"
+    >
+      <div class="in rv">
+        <p class="scr">Gracias por ser parte de nuestra historia</p>
+        <p class="cap" style="margin-top: 14px">
+          Pequeños gigantes que dejan huella
+        </p>
+        <p style="opacity: 0.7">I.E. 22264 Rosa Costa de Arena</p>
+      </div>
+    </footer>
+
+    <div
+      id="ltr"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Carta de nuestros pequeños"
+    >
+      <div class="ltp" id="ltp">
+        <p id="ltt"></p>
+        <div class="row">
+          <button class="btn rb" id="ltx" type="button">Cerrar</button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
